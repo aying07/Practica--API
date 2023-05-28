@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs de HTML5</title>
+</head>
+<body>
+    <h2>Selecciona en el siguiente botón el archivo que quieres reproducir:</h2>
+    <input type= "file" accept="video/mp4" onchange="handleFileSelect(this.files[0])"> 
+
+    <div>
+     <video id="videoPlayer" width="700" height="480" controls>
+        <source src="" type="video/mp4">
+     </video>
+    </div>
+
+    <div id="buttons">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="subirVolumen">Subir volumen</button>
+        <button id="bajarVolumen">Bajar volumen</button>
+    </div>
+    <div id="cargando" style="display:none;">Se está cargando el video, espere por favor.</div>
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>
